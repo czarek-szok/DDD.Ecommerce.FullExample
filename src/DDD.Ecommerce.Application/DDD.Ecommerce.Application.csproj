@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+		<ProjectGuid>980e9863-9e77-4007-afb1-dccbbf678fe3</ProjectGuid>
+		<Nullable>enable</Nullable>
+		<CodeAnalysisRuleSet>..\..\.sonarlint\wj-cc.DDD.Ecommerce.apicsharp.ruleset</CodeAnalysisRuleSet>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+		<WarningsAsErrors />
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\DDD.Ecommerce.Core\DDD.Ecommerce.Core.csproj" />
+	  <ProjectReference Include="..\DDD.Ecommerce.Domain\DDD.Ecommerce.Domain.csproj" />
+	  <ProjectReference Include="..\DDD.Ecommerce.Infrastructure\DDD.Ecommerce.Infrastructure.csproj" />
+	  <ProjectReference Include="..\DDD.Ecommerce.Interfaces\DDD.Ecommerce.Interfaces.csproj" />
+	</ItemGroup>
+
+</Project>

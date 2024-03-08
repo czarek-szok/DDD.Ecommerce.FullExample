@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+ <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+	<ProjectGuid>{ECA40226-C843-462B-9907-320695629D9B}</ProjectGuid>
+	<Nullable>enable</Nullable>
+  </PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+		<WarningsAsErrors />
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\DDD.Ecommerce.Core\DDD.Ecommerce.Core.csproj" />
+	  <ProjectReference Include="..\DDD.Ecommerce.Domain\DDD.Ecommerce.Domain.csproj" />
+	  <ProjectReference Include="..\DDD.Ecommerce.Infrastructure\DDD.Ecommerce.Infrastructure.csproj" />
+	  <ProjectReference Include="..\DDD.Ecommerce.Interfaces\DDD.Ecommerce.Interfaces.csproj" />
+	</ItemGroup>
+
+</Project>

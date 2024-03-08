@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+		<ProjectGuid>c384acec-2b93-4de9-8c62-c2db4410a2ca</ProjectGuid>
+		<CodeAnalysisRuleSet>..\..\.sonarlint\wj-cc.DDD.Ecommerce.apicsharp.ruleset</CodeAnalysisRuleSet>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+		<WarningsAsErrors />
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="Dictionaries\**" />
+	  <Compile Remove="Enums\**" />
+	  <Compile Remove="Factories\**" />
+	  <EmbeddedResource Remove="Dictionaries\**" />
+	  <EmbeddedResource Remove="Enums\**" />
+	  <EmbeddedResource Remove="Factories\**" />
+	  <None Remove="Dictionaries\**" />
+	  <None Remove="Enums\**" />
+	  <None Remove="Factories\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\DDD.Ecommerce.Core\DDD.Ecommerce.Core.csproj" />
+	</ItemGroup>
+
+</Project>

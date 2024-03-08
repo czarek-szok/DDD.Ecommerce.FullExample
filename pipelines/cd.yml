@@ -1,0 +1,11 @@
+parameters:
+  environment:
+
+jobs:
+- deployment: Deploy_OpenShift
+  environment: ${{ parameters.environment }}
+  strategy:
+    runOnce:
+      deploy:
+        steps:
+        - script: 'echo Deployed to ${{ parameters.environment }} environment'
